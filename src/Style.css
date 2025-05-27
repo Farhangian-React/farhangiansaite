@@ -1,0 +1,126 @@
+.body {
+  background: #1e142c;
+  color: #f9f9f9;
+  font-family: "Euclid Circular B", "Poppins";
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+.background {
+position: fixed;
+  z-index: 0;
+  left: 50%;
+  right: 0;
+  bottom: 660px;
+  translate: -50% 0;
+  width: 100vw;
+  scale: 4;
+}
+
+@media (width <= 590px) {
+.background {
+  position: fixed;
+  z-index: 0;
+  left: 50%;
+  right: 0;
+  bottom: 380px;
+  translate: -50% 0;
+  width: 100vw;
+  scale: 4;
+}
+}
+
+
+
+.button1 {
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #1e142c;
+    --button_outline_color: #8229d5;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+   
+  }
+  
+ 
+  .formbutton {
+    display: block;
+    box-sizing:border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+  font-size: small;
+   
+  }
+ 
+    .button1:hover .formbutton {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.35em);
+    background: #f9f9f9;
+    color: #1e142c;
+  }
+  
+  .button1:active .formbutton {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
+  .navicon1 {
+    margin: 0 12px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0);
+  
+    font-size: 2.5rem;
+    -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,0.4));
+  
+}
+  .navicon1:hover{
+  background: #f9f9f9;
+    color: #050801;
+    box-shadow: 0 0 5px var( #f9f9f9),
+    0 0 25px var( #f9f9f9),
+    0 0 50px var( #f9f9f9),
+    0 0 200px var( #f9f9f9);
+    transform: translateY(-5px);
+  }
+.blurstyle{
+  animation: scalee 4s alternate infinite linear;
+}
+@keyframes scalee{
+  0%{
+transform: scale(1);
+  }
+  25%{
+    transform: scale(0.5);
+  }
+  75%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.textblurb{
+  text-shadow: 0px 0px 10px #f9f9f9,
+  0px 0px 10px #f9f9f9,
+  0px 0px 20px #f9f9f9,
+  0px 0px 40px #f9f9f9;
+}
