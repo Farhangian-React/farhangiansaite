@@ -39,7 +39,7 @@ const [open, setOpen] = useState(false);
   <div className='hidden md:flex mt-1' >
 <ul className='flex flex-row justify-center'>
  <NavLink to={"/aboutus"}><li className='px-3'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>درباره</p></li></NavLink>
-  <NavLink><li className='px-3'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>نمونه کار</p></li></NavLink>
+  <NavLink  to={"/portfolio"}><li className='px-3'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>نمونه کار</p></li></NavLink>
   <NavLink to={"/skill"}><li className='px-3'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>مهارت</p></li></NavLink>
   <NavLink><li className='px-3'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>تماس با ما</p></li></NavLink>
 </ul>
@@ -90,7 +90,7 @@ flexShrink: 0, '& .MuiDrawer-paper': {bgcolor:"#1e142c",width:"300px" ,direction
 <ul className='flex flex-col justify-center bg-transparent pr-5 '>
   <li><p className='text-sm py-5 text-gray-500'>منو</p></li>
    <NavLink to={"/aboutus"}><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>درباره</p></li></NavLink>
-  <NavLink><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>نمونه کار</p></li></NavLink>
+  <NavLink to={"/portfolio"}><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>نمونه کار</p></li></NavLink>
   <NavLink to={"/skill"}><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>مهارت</p></li></NavLink>
   <NavLink><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>تماس با ما</p></li></NavLink>
  <li><p className='text-sm py-5 text-gray-500'>شبکه های اجتمایی</p></li>
