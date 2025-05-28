@@ -41,12 +41,12 @@ const [open, setOpen] = useState(false);
  <NavLink to={"/aboutus"}><li className='px-3'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>درباره</p></li></NavLink>
   <NavLink  to={"/portfolio"}><li className='px-3'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>نمونه کار</p></li></NavLink>
   <NavLink to={"/skill"}><li className='px-3'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>مهارت</p></li></NavLink>
-  <NavLink><li className='px-3'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>تماس با ما</p></li></NavLink>
+  <NavLink to={"contact"}><li className='px-3'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>تماس با ما</p></li></NavLink>
 </ul>
    </div>
    <div className='hidden md:flex ml-4'>
     
-    <button className='button1 ' type='submit' >  <span className='formbutton'>   دانلود رزومه</span>   </button>
+    <button className='button1 ' type='submit' >  <span className='formbutton1'>   دانلود رزومه</span>   </button>
   
     </div> 
     <div className='flex md:hidden'>
@@ -92,7 +92,7 @@ flexShrink: 0, '& .MuiDrawer-paper': {bgcolor:"#1e142c",width:"300px" ,direction
    <NavLink to={"/aboutus"}><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>درباره</p></li></NavLink>
   <NavLink to={"/portfolio"}><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>نمونه کار</p></li></NavLink>
   <NavLink to={"/skill"}><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>مهارت</p></li></NavLink>
-  <NavLink><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>تماس با ما</p></li></NavLink>
+  <NavLink to={"contact"}><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>تماس با ما</p></li></NavLink>
  <li><p className='text-sm py-5 text-gray-500'>شبکه های اجتمایی</p></li>
  <li className='flex flex-row'><MdFacebook className='my-2.5 w-6 h-6 text-[#f9f9f9] font-bold hover:text-[#8229d5] hover:scale-150'/>
  <p className='text-md font-bold text-[#f9f9f9] mr-2 mt-1.5  hover:text-[#8229d5]'>فیس بوک</p></li>

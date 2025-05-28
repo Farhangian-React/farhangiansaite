@@ -6,6 +6,7 @@ import TopNav from './Navbar/TopNav';
 import Aboutus from './Aboutus/Aboutus';
 import Skill from './Skills/Skill';
 import Portfolio from './Site/Portfolio';
+import Contact from './Contact/Contact';
 import Page from './Page';
 
 
@@ -18,6 +19,8 @@ function App() {
              <Route path="/aboutus"  element={<Aboutus/>} />
               <Route path="/skill"  element={<Skill/>} />
               <Route path="/portfolio"  element={<Portfolio/>} />
+              <Route path="/contact"  element={<Contact/>} />
+              
 
       </Routes>
       </div>

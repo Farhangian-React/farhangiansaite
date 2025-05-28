@@ -22,8 +22,8 @@ function Skill() {
     <>
     <div className='flex justify-center flex-col self-center items-center mt-8' >
         <div className='blurstyle'>
-            <p  className=' text-lg md:text-3xl text-[#8229d5] text-center pb-2 font-bold'>مهارت های من </p>
-            <p className='text-sm text-center text-[#f9f9f9] pt-2'>...وهمچنان علاقمند به فراگیری دانش های جدید در دنیای تکنولوژی</p>
+            <p  className=' text-xl md:text-3xl text-[#8229d5] text-center pt-2 pb-2 font-bold'>مهارت های من </p>
+            <p className='text-sm text-center text-[#f9f9f9] pt-1 pb-8'>...وهمچنان علاقمند به فراگیری دانش های جدید در دنیای تکنولوژی</p>
         </div>
         <div className='flex flex-wrap justify-center w-[95%]  md:w-[90%] mx-auto gap-5 my-8'>
         <div className='flex flex-col justify-around bg-purple-200 w-[140px] h-[120px] md:w-[200px] md:h-[150px]
