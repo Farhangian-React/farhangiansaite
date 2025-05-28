@@ -45,7 +45,7 @@ errmesage.comment="لطفا نظر خود را وارد کنید";
       //console.log(result);
   
   let result={firstname,lastname,call,comment}
-  fetch("https://servers-nahall.onrender.com/Allcommentsnahall",{
+  fetch("https://servers-nahall.onrender.com/comentmysite",{
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
@@ -86,14 +86,14 @@ toast.success("ثبت دیدگاه با موفقیت صورت گرفت") ;
                  <MdWifiCalling3 className='w-5 h-5 mx-1 mt-1 hover:text-[#8229d5] text-[#f9f9f9]'/>
              </div>
         
-        <div className='flex items-center  justify-center w-[95%]  md:w-[90%] mx-auto  my-8'>
+        <div className='flex items-center  justify-center w-[100%]  md:w-[90%] mx-auto  my-8'>
             
  <form dir='rtl' noValidate onSubmit={handlesubmit} className=' w-[100%] md:w-[75%] mx-auto z-10 '>
         <div className='my-3 flex flex-col justify-center items-center self-center mx-auto'>
               <Input
               sx={{fontSize:"18px",color:"#fff",borderRadius:"10px",pr:1,
               boxshadow:"rgba(32, 4, 142, 0.65) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,rgba(32, 4, 142, 0.65) 0px -2px 6px 0px inset"
-           ,border:"1px solid #8229d5",width:"70%" }}
+           ,border:"1px solid #8229d5",width:{xs:"80%",md:"70%"} }}
             placeholder='نام'
                 autoComplete="firstname"
                 name='نام '
@@ -114,7 +114,7 @@ toast.success("ثبت دیدگاه با موفقیت صورت گرفت") ;
               <Input
               sx={{fontSize:"18px",color:"#fff",borderRadius:"10px",pr:1,
               boxshadow:"rgba(32, 4, 142, 0.65) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,rgba(32, 4, 142, 0.65) 0px -2px 6px 0px inset"
-           ,border:"1px solid #8229d5",width:"70%" }}    
+           ,border:"1px solid #8229d5",width:{xs:"80%",md:"70%"}  }}    
                    placeholder='نام خانوادگی'
                 autoComplete="lastname"
                 name='نام خانوادگی'
@@ -135,7 +135,7 @@ toast.success("ثبت دیدگاه با موفقیت صورت گرفت") ;
               <Input
               sx={{fontSize:"18px",color:"#fff",borderRadius:"10px",pr:1,
               boxshadow:"rgba(32, 4, 142, 0.65) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,rgba(32, 4, 142, 0.65) 0px -2px 6px 0px inset"
-           ,border:"1px solid #8229d5",width:"70%" }}
+           ,border:"1px solid #8229d5",width:{xs:"80%",md:"70%"}  }}
             placeholder='شماره تماس'
                 autoComplete="call"
                 name='شماره تماس'
@@ -161,14 +161,14 @@ toast.success("ثبت دیدگاه با موفقیت صورت گرفت") ;
                  value={comment}
                  onChange={(e)=> setComment(e.target.value)}
              rows="50" cols="30"
-             sx={{width:"70%",height:"170px",fontSize:"18px",bgcolor:"transparent",pr:1.5,color:"gray",borderRadius:"20px",
+             sx={{width:{xs:"80%",md:"70%"} ,height:"170px",fontSize:"18px",bgcolor:"transparent",pr:1.5,color:"gray",borderRadius:"20px",
             border:"1px solid #8229d5", boxshadow:"rgba(32, 4, 142, 0.65) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,rgba(32, 4, 142, 0.65) 0px -2px 6px 0px inset"}}
              ></Textarea>
                <Typography variant='body1' sx={{color:"#fff",mt:1}}>
                {error.comment} 
              </Typography>
            </div>
-          <div  className='w-[70%] mx-auto flex flex-col justify-center my-2'>
+          <div  className='w-[80%] md:w-[70%] mx-auto flex flex-col justify-center my-2'>
           <button    className='button1'  type='submit' >  <span className='formbutton'> ثبت نظر  </span></button>
           </div> 
   

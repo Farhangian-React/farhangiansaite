@@ -1,36 +1,3 @@
-.body {
-  background: #1e142c;
-  color: #f9f9f9;
-  font-family: "Euclid Circular B", "Poppins";
-  width: 100vw;
-  height: 100vh;
-}
-
-
-
-.background {
-position: fixed;
-  z-index: 0;
-  left: 50%;
-  right: 0;
-  bottom: 660px;
-  translate: -50% 0;
-  width: 100vw;
-  scale: 4;
-}
-
-@media (width <= 590px) {
-.background {
-  position: fixed;
-  z-index: 0;
-  left: 50%;
-  right: 0;
-  bottom: 380px;
-  translate: -50% 0;
-  width: 100vw;
-  scale: 4;
-}
-}
 
 
 

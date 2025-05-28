@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MdFacebook } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { FaTelegram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
@@ -86,10 +86,10 @@ export default function Footerss() {
    </div>
      
               <ul className='flex flex-row justify-center'>
-       <a  className='navicon1'><li><MdFacebook className='mx-2.5 text-[#1e142c] font-bold '/></li></a>
-         <a  className='navicon1'> <li><FaLinkedin  className='mx-2.5  text-[#1e142c] font-bold '/></li></a>
-      <a  className='navicon1'><li><FaTelegram  className='mx-2.5 text-[#1e142c] font-bold '/></li></a>
-       <a  className='navicon1'><li><FaGithubSquare  className='mx-2.5 text-[#1e142c] font-bold '/></li></a>
+       <a href='wa.me/09300318282' className='navicon1'><li><IoLogoWhatsapp className='mx-2.5 text-[#1e142c] font-bold '/></li></a>
+         <a href='https://www.linkedin.com/in/elham-65-farhangianan' className='navicon1'> <li><FaLinkedin  className='mx-2.5  text-[#1e142c] font-bold '/></li></a>
+      <a href='@Farhangianeli' className='navicon1'><li><FaTelegram  className='mx-2.5 text-[#1e142c] font-bold '/></li></a>
+       <a  href='https://github.com/Farhangian-React' className='navicon1'><li><FaGithubSquare  className='mx-2.5 text-[#1e142c] font-bold '/></li></a>
     </ul>
     <div className=' flex flex-row justify-center mt-12'>
   

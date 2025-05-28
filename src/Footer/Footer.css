@@ -3,7 +3,7 @@
   color: #f9f9f9;
   font-family: "Euclid Circular B", "Poppins";
   width: 100vw;
-  height: 100vh;
+  height: 30vh;
  
 }
 
@@ -14,13 +14,13 @@ position: fixed;
   z-index: 0;
   left: 50%;
   right: 0;
-  bottom: 660px;
+  bottom: 650px;
   translate: -50% 0;
   width: 100vw;
   scale: 4;
 }
 
-@media (width <= 590px) {
+@media (width <= 769px) {
 .background {
   position: fixed;
   z-index: 0;
