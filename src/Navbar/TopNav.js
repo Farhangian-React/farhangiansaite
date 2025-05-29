@@ -94,11 +94,11 @@ flexShrink: 0, '& .MuiDrawer-paper': {bgcolor:"#1e142c",width:"300px" ,direction
   <NavLink to={"/skill"}><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>مهارت</p></li></NavLink>
   <NavLink to={"contact"}><li className='py-2.5'><p className='text-md font-bold text-white hover:text-[#8229d5] hover:scale-110'>تماس با ما</p></li></NavLink>
  <li><p className='text-sm py-5 text-gray-500'>شبکه های اجتمایی</p></li>
- <a href='wa.me/09300318282'><li className='flex flex-row'><IoLogoWhatsapp className='my-2.5 w-6 h-6 text-[#f9f9f9] font-bold hover:text-[#8229d5] hover:scale-150'/>
+ <a href='https://wa.me/989300318282'><li className='flex flex-row'><IoLogoWhatsapp className='my-2.5 w-6 h-6 text-[#f9f9f9] font-bold hover:text-[#8229d5] hover:scale-150'/>
  <p className='text-md font-bold text-[#f9f9f9] mr-2 mt-1.5  hover:text-[#8229d5]'> واتساپ</p></li></a>
 <a href='https://www.linkedin.com/in/elham-65-farhangianan'><li className='flex flex-row'><FaLinkedin  className='my-2.5 w-5 h-5 text-[#f9f9f9] font-bold  hover:text-[#8229d5] hover:scale-150'/>
  <p className='text-md font-bold text-[#f9f9f9] mr-2 mt-1.5  hover:text-[#8229d5]'>لینکدین </p></li></a>
- <a href='@Farhangianeli'> <li className='flex flex-row'><FaTelegram  className='my-2.5 w-5 h-5 text-[#f9f9f9] font-bold  hover:text-[#8229d5] hover:scale-150'/>
+ <a href='https://t.me/Farhangianeli'> <li className='flex flex-row'><FaTelegram  className='my-2.5 w-5 h-5 text-[#f9f9f9] font-bold  hover:text-[#8229d5] hover:scale-150'/>
    <p className='text-md font-bold text-[#f9f9f9] mr-2 mt-1.5  hover:text-[#8229d5]'> تلگرام</p></li></a>
  <a href='https://github.com/Farhangian-React'><li className='flex flex-row'><FaGithubSquare  className='my-2.5 w-5 h-5 text-[#f9f9f9] font-bold hover:text-[#8229d5] hover:scale-150 '/>
   <p className='text-md font-bold text-[#f9f9f9] mr-2 mt-1.5  hover:text-[#8229d5]'> گیت هاب</p></li></a>
