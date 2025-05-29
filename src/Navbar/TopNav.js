@@ -14,6 +14,7 @@ import "../Style.css";
 
 
 function TopNav() {
+  const urlpdf="./Rezomeh/Farhangian-rezomeh.pdf";
 const [open, setOpen] = useState(false);
 
   const handleDrawerOpen = () => {
@@ -46,8 +47,8 @@ const [open, setOpen] = useState(false);
    </div>
    <div className='hidden md:flex ml-4'>
     
-    <button className='button1 ' type='submit' >  <span className='formbutton1'>   دانلود رزومه</span>   </button>
-  
+    <a href={urlpdf} download><button className='button1 ' type='submit' >  <span className='formbutton1'>   دانلود رزومه</span>   </button>
+  </a>
     </div> 
     <div className='flex md:hidden'>
        <div className='ml-4 ' >

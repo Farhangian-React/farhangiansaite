@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../Style.css";
 function Aboutus() {
+   const urlpdf="../Rezomeh/Farhangian-rezomeh.pdf";
  useEffect(()=> {
       AOS.init({
         disable: "phone",
@@ -33,7 +34,7 @@ Front-end developer
    و نوآوری در کارها هستم. آماده‌ی همکاری با تیم‌ها و افرادی هستم که به رشد و توسعه اهمیت می‌دهند. </p>
 <p className=''></p>
  <div className='flex flex-row justify-center z-10 mt-8 mr-2 md:mr-5  h-[45px]'>
-    <button className='button1 ' type='submit' >  <span className='formbutton1'>   دانلود رزومه</span>   </button>
+   <a href={urlpdf}> <button className='button1 ' type='submit' >  <span className='formbutton1'> دانلود رزومه</span></button></a>
       <ul className='flex flex-row justify-center mr-5 md:mr-8 mt-3'>
            <a href='https://wa.me/989300318282'  ><li><IoLogoWhatsapp className='mx-1.5 w-6 h-6 text-[#f9f9f9] font-bold hover:text-[#8229d5] hover:scale-150'/></li></a>
            <a href='https://www.linkedin.com/in/elham-65-farhangianan'> <li><FaLinkedin  className='mx-1.5 w-5 h-5 text-[#f9f9f9] font-bold  hover:text-[#8229d5] hover:scale-150'/></li></a>
