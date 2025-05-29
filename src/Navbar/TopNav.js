@@ -47,7 +47,7 @@ const [open, setOpen] = useState(false);
    </div>
    <div className='hidden md:flex ml-4'>
     
-    <a href={urlpdf} download><button className='button1 ' type='submit' >  <span className='formbutton1'>   دانلود رزومه</span>   </button>
+    <a href={urlpdf} target='_self'><button className='button1 ' type='submit' >  <span className='formbutton1'>   دانلود رزومه</span>   </button>
   </a>
     </div> 
     <div className='flex md:hidden'>
