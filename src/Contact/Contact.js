@@ -6,13 +6,15 @@ import "react-toastify/dist/ReactToastify.css";
 import "../Style.css";
 import { MdWifiCalling3 } from "react-icons/md";
 import { LuMail } from "react-icons/lu";
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 function Contact() {
   const [firstname,setFirstname]=useState("");
    const [lastname,setLastname]=useState("");
     const [call,setCall]=useState("");
   const [comment,setComment]=useState("");
   const [error,setError]=useState({});
-
+const [isLoading,setIsLoading]=useState(false);
 const isvalidate = ()=>{
     let isvalid =true;
     let errmesage={};
@@ -40,31 +42,37 @@ errmesage.comment="لطفا نظر خود را وارد کنید";
     return isvalid;
   }
   const handlesubmit=(e)=>{
+   
     e.preventDefault();
-    if(isvalidate()){
-      //console.log(result);
-  
-  let result={firstname,lastname,call,comment}
-  fetch("https://servers-nahall.onrender.com/comentmysite",{
-    headers: {
+    setIsLoading(true);
+    if(isvalidate() ){
+    fetch("https://servers-nahall.onrender.com/comentmysite",{
+     method:"POST",  
+     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     },
-    method:"POST",
-    body:JSON.stringify(result)
+ 
+    body:JSON.stringify({firstname:firstname,lastname:lastname,call:call,comment:comment})
 }).then((res)=>{
-toast.success("ثبت دیدگاه با موفقیت صورت گرفت") ; 
+toast.success("ثبت دیدگاه با موفقیت صورت گرفت") ;
+
+ 
 }).catch((err)=>{
     toast.error("");
 })
-      
+   setIsLoading(false);
+    setLastname(" ");
+    setCall(" ");
+    setComment(" ");
+setFirstname(" ");
           }
       }
 
   return (
     <>
-     <div>
-     <ToastContainer/>  
+    <div>
+      <ToastContainer/>
     </div>
     <div className='flex justify-center flex-col self-center items-center mt-8 w-full '  >
         <div className='blurstyle'>
@@ -169,9 +177,21 @@ toast.success("ثبت دیدگاه با موفقیت صورت گرفت") ;
              </Typography>
            </div>
           <div  className='w-[80%] md:w-[70%] mx-auto flex flex-col justify-center my-2'>
-          <button    className='button1'  type='submit' >  <span className='formbutton'> ثبت نظر  </span></button>
-          </div> 
-  
+        <button    className='button1'  type='submit'  >  <span className='formbutton'>
+          
+     ثبت نظر</span>
+      </button> </div> 
+
+    {isLoading?
+    <Backdrop
+  sx={(theme) => ({ color: '#fff', zIndex: theme.zIndex.drawer + 1 })}
+  open
+>
+<CircularProgress color="inherit" />
+</Backdrop>
+:
+<p></p> 
+}
         </form>
     </div>
     </div>
