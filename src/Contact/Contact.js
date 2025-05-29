@@ -80,7 +80,7 @@ toast.success("ثبت دیدگاه با موفقیت صورت گرفت") ;
              </div>
               <div className='flex flex-row justify-center mt-0.5 z-10'>
                
-              <a href='https://mail.google.com/'> 
+              <a href="tel:09300318282"> 
                 <p className='text-[#f9f9f9] hover:text-[#8229d5]'>09300318282</p>
                 </a> 
                  <MdWifiCalling3 className='w-5 h-5 mx-1 mt-1 hover:text-[#8229d5] text-[#f9f9f9]'/>
