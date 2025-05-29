@@ -10,11 +10,11 @@ import { FaTelegram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import urlpdf from "../Rezomeh/Farhangian-rezomeh.pdf";
 import "../Style.css";
 
 
 function TopNav() {
-  const urlpdf="./Rezomeh/Farhangian-rezomeh.pdf";
 const [open, setOpen] = useState(false);
 
   const handleDrawerOpen = () => {
