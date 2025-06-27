@@ -82,7 +82,7 @@ const [isHovering2, setIsHovering2] = useState(false);
            <div className='flex justify-center flex-col self-center items-center mt-12  ' >
         <div className='blurstyle'>
             <p  className=' text-xl md:text-3xl text-[#8229d5] text-center pt-2 pb-2 font-bold'>نمونه کارها  </p>
-            <p className='text-sm text-center text-[#f9f9f9] pt-1 mb-8'>...و پروژه های مینی مال مختلف </p>
+            <p className='text-sm text-center text-[#f9f9f9] pt-1 mb-8'>...و مینی پروژه های مختلف </p>
         </div>
           <div className='flex flex-wrap justify-center w-[95%] h-auto mx-auto gap-5 my-8 '>
        
